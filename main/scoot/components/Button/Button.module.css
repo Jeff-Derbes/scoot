@@ -1,20 +1,18 @@
 .btn {
-  color: white;
-  height: 53px;
-  width: 180px;
   background-color: var(--yellow);
+  color: white;
+  font-family: var(--font-mono);
+  height: 53px;
   padding: 14px 39px;
-  text-align: center;
   position: relative;
+  text-align: center;
+  width: 190px;
 }
 
-.btn:hover::before {
+.btn:hover {
+  background-color: white;
+  border: 1px solid var(--yellow);
+  color: var(--yellow);
   cursor: pointer;
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease-in-out;
 }
