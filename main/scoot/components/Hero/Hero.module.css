@@ -1,0 +1,32 @@
+.hero-container{
+    background-image: url('/assets/images/home-hero-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 650px;
+}
+
+.hero-content{
+    color: white;
+    font-weight: bold;
+    font-size: 56px;
+    max-width: 520px;
+}
+
+.hero-subheading{
+    color: white;
+    font-family: var(--font-sans);
+    width: 505px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.hero-btn{
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.content-container{
+    padding-top: 153px;
+    padding-left: 165px;
+}
