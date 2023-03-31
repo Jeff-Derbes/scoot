@@ -29,4 +29,27 @@
 .content-container{
     padding-top: 153px;
     padding-left: 165px;
+    position: relative;
+}
+
+.subheading-container{
+    position: relative;
+}
+
+.line{
+    position: absolute;
+    top: 384px;
+    left: 0;
+}
+
+.arrow{
+    position: absolute;
+    left: 705px;
+    top: 384px;
+}
+
+.circles{
+    position: absolute;
+    top: 443px;
+    left: 1200px;
 }
