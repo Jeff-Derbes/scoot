@@ -70,7 +70,7 @@
         text-align: center;
     }
 
-    .hero-btn .btn{
+    .hero-btn div{
         margin: 0 auto;
     }
 
@@ -118,5 +118,13 @@
 
     .arrow{
         transform: translateX(-205px);
+    }
+
+    .arrow{
+        top: 463px;
+    }
+
+    .hero-btn div{
+        margin: 0 auto;
     }
 }
