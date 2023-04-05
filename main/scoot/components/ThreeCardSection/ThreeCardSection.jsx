@@ -8,6 +8,7 @@ import Image from "next/image";
 function ThreeCardSection(props) {
     return (
         <div className={styles['content-container']}>
+            <div className={styles.line}></div>
             <div className={styles['card-container']}>
                 <div className={styles['card-icon']}>
                     <Image src={locate} className={styles.icon} alt='line' width={96} height={96}/>

@@ -2,6 +2,7 @@
     display: flex;
     margin: 160px auto;
     max-width: 1275px;
+    position: relative;
 }
 
 
@@ -19,6 +20,19 @@
 
 .card-content{
     max-width: 350px;
+}
+
+.card-icon{
+    z-index: 10;
+}
+
+.line{
+    background-color: var(--light-gray);
+    left: -240px;
+    top: 45px;
+    height: 10px;
+    width: 1160px;
+    position: absolute;
 }
 
 @media (max-width: 800px){
@@ -44,6 +58,10 @@
         flex-direction: column;
         justify-content: center;
         align-content: center;
+    }
+
+    .line{
+       display: none;
     }
 }
 

@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1260px;
+    position: relative;
+}
+
+.container-flipped{
+    flex-direction: row-reverse;
+}
+
+.content-container{
+    max-width: 445px;
+    margin: 0 24px;
+}
+
+.content-header{
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.content{
+    font-family: var(--font-sans);
+    max-width: 445px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.image-container{
+    position: relative;
+}
+
+.image{
+    border-radius: 50%;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    transform: translateX(530px);
+}
+
+.circle-flipped{
+    transform: translateX(-530px);
+}
