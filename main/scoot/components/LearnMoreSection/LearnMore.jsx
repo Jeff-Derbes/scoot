@@ -5,7 +5,7 @@ import Image from "next/image";
 import arrow from '@/public/assets/patterns/right-arrow.svg'
 import circle from '@/public/assets/patterns/circle.svg'
 
-function LearnMore({flipped, button, content, header, image, arrowTop, arrowBottom, arrowFlipped, shortArrow}) {
+function LearnMore({flipped, button, content, header, image, hasArrow,  arrowTop, arrowBottom, arrowFlipped, shortArrow}) {
     return (
         <div className={flipped ? `${styles['container-flipped']} ${styles.container}` : styles.container}>
             <div className={styles['content-container']}>
@@ -21,6 +21,17 @@ function LearnMore({flipped, button, content, header, image, arrowTop, arrowBott
                     <Image src={circle} height={445} width={445} />
                 </div>
             </div>
+
+            {hasArrow &&
+                <Image
+                className={`${styles.arrow}
+                ${arrowFlipped ? styles['arrow-flipped'] : ''}
+                ${shortArrow ? styles['short-arrow'] : '' } 
+                ${arrowTop ? styles['arrow-top'] : ''}`
+            }
+                src={arrow}
+                width={735}
+                height={135} />}
 
 
         </div>
