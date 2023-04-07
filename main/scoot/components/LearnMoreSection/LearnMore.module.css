@@ -52,8 +52,69 @@
 
 .arrow-flipped{
     transform: scaleX(-1);
+    right: 250px;
 }
 
 .short-arrow{
-    transform: translateX(225px);
+    left: -15px;
+}
+
+.short-arrow.arrow-flipped{
+    transform: scaleX(-1);
+    left: unset ;
+    right: -15px;
+}
+
+.arrow-top{
+    top: 40px;
+}
+
+@media(max-width: 800px){
+    .container{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 55px;
+        text-align: center;
+    }
+
+    .card-btn{
+       display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+}
+
+
+@media(max-width: 530px){
+
+    .image-container{
+        max-width: 311px;
+        max-height: 311px;
+    }
+
+    .image{
+        max-width: 311px;
+        max-height: 311px;
+    }
+
+    .content-header{
+        font-size: 33px;
+    }
+
+    .arrow{
+        top: 150px;
+    }
+
+    .arrow-top{
+        top: 0;
+    }
+
+    .short-arrow{
+        left: -75px;
+    }
+
+    .short-arrow.arrow-flipped{
+        right: 75px;
+    }
 }

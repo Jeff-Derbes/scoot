@@ -32,11 +32,12 @@ export default function Home() {
                                image={city}
                                flipped={true}
                                shortArrow={true}
-                               hasArrow={true}/>
+                               hasArrow={true}
+                    arrowTop={true}/>
 
                     <LearnMore button={true} header={'Zero hassle payments'}
                                content={'Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.'}
-                               image={payments} shortArrow={true} hasArrow={true}/>
+                               image={payments} hasArrow={true} arrowFlipped={true} shortArrow={true} arrowTop={true}/>
                 </section>
             </main>
         </>
