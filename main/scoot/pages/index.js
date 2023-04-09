@@ -6,6 +6,7 @@ import LearnMore from "@/components/LearnMoreSection/LearnMore";
 import telemetry from '@/public/assets/images/telemetry.jpg'
 import city from '@/public/assets/images/near-you.jpg'
 import payments from '@/public/assets/images/payments.jpg'
+import JoinNow from "@/components/JoinNow/JoinNow";
 
 export default function Home() {
     return (
@@ -39,6 +40,11 @@ export default function Home() {
                                content={'Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.'}
                                image={payments} hasArrow={true} arrowFlipped={true} shortArrow={true} arrowTop={true}/>
                 </section>
+
+                <section>
+                    <JoinNow />
+                </section>
+
             </main>
         </>
     );
