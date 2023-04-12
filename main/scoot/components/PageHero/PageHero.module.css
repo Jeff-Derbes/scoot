@@ -1,0 +1,24 @@
+.hero-container {
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 200px;
+  position: relative;
+}
+
+.content-container {
+  color: white;
+  padding-top: 72px;
+  padding-left: 165px;
+  align-items: center;
+}
+
+.hero-content {
+  display: inline;
+  font-size: 56px;
+}
+
+.circles {
+  position: absolute;
+  right: -50px;
+}

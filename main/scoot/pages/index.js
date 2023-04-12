@@ -13,8 +13,6 @@ export default function Home() {
   return (
     <>
       <main>
-        <Header />
-
         <section>
           <Hero />
         </section>
@@ -60,14 +58,6 @@ export default function Home() {
             shortArrow={true}
             arrowTop={true}
           />
-        </section>
-
-        <section>
-          <JoinNow />
-        </section>
-
-        <section>
-          <Footer />
         </section>
       </main>
     </>
