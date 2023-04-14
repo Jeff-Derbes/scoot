@@ -1,0 +1,40 @@
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  margin-bottom: 87px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.count {
+  font-size: 28px;
+  font-family: var(--font-mono);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--yellow);
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  position: absolute;
+  bottom: -45px;
+  left: 70px;
+}
+
+.text-container {
+  max-width: 350px;
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 27px;
+}
