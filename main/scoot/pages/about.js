@@ -6,6 +6,8 @@ import InfoBubble from "@/components/InfoBubble/InfoBubble";
 import ourTech from "@/public/assets/images/our-tech.jpg";
 import ourIntegrityy from "@/public/assets/images/our-integrity.jpg";
 import ourCommunity from "@/public/assets/images/our-community.jpg";
+import FaqCard from "@/components/FaqCard/FaqCard";
+import FaqContainer from "@/components/FaqContainer/FaqContainer";
 
 export default function About() {
   return (
@@ -70,6 +72,50 @@ export default function About() {
             }
           />
         </div>
+      </section>
+      <section>
+        <h2 className="section-header">FAQs</h2>
+        <FaqContainer header={"How it works"}>
+          <FaqCard
+            question={"How do I download the app?"}
+            answer={
+              "To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page."
+            }
+          />
+          <FaqCard
+            question={"Can I find a nearby Scoots?"}
+            answer={
+              "Yes! You can find a nearby Scoot by using the app. Once you’ve downloaded the app, you can use the map to find the nearest Scoot to you. You can also use the app to unlock the Scoot and start your ride."
+            }
+          />
+          <FaqCard
+            question={"Do I need a license to ride?"}
+            answer={
+              "No, you don’t need a license to ride a Scoot. However, you do need to be at least 18 years old to ride a Scoot. You also need to be able to ride a bike and have a valid credit card to unlock the Scoot."
+            }
+          />
+        </FaqContainer>
+
+        <FaqContainer header={"Safe driving"}>
+          <FaqCard
+            question={"Should I wear a helmet?"}
+            answer={
+              "Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting."
+            }
+          />
+          <FaqCard
+            question={"How about the rules & regulations?"}
+            answer={
+              "We follow all local laws and regulations. We also have a dedicated team of Scoot Safety Officers who are responsible for ensuring that all Scooters are parked safely and responsibly. If you see a Scoot parked in a dangerous or illegal way, please report it to us via the app."
+            }
+          />
+          <FaqCard
+            question={"What if I damage my Scoot?"}
+            answer={
+              "If you damage your Scoot, please report it to us via the app. We’ll then send you a link to a form where you can report the damage. We’ll then get in touch with you to arrange a time to pick up the Scoot and fix it."
+            }
+          />
+        </FaqContainer>
       </section>
     </div>
   );

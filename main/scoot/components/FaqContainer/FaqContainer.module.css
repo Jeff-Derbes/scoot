@@ -1,0 +1,28 @@
+.faq-container {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 64px;
+}
+
+.header {
+  font-size: 40px;
+}
+
+.FAQs {
+  width: 730px;
+}
+
+@media (max-width: 800px) {
+  .faq-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .FAQs {
+    width: 90%;
+  }
+}
