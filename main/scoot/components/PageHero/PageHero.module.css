@@ -9,7 +9,8 @@
 .content-container {
   color: white;
   padding-top: 72px;
-  padding-left: 165px;
+  max-width: 1260px;
+  margin: 0 auto;
   align-items: center;
 }
 
@@ -21,4 +22,21 @@
 .circles {
   position: absolute;
   right: -50px;
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 160px;
+  }
+
+  .content-container {
+    padding-top: 32px;
+    padding-left: 32px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .circles {
+    display: none;
+  }
 }

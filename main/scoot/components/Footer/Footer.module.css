@@ -1,14 +1,20 @@
 .footer-container {
   background-color: #333a44;
   color: white;
-  width: 100%;
   width: 100vw;
   height: 94px;
+}
+
+.footer-wrapper {
+  max-width: 1260px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  height: 94px;
+  margin-top: 25px;
+  justify-content: space-between;
   margin: 0 auto;
   position: relative;
+  align-content: end;
 }
 
 .nav-logo {
