@@ -1,6 +1,10 @@
 import PageHero from "@/components/PageHero/PageHero";
-import Image from "next/image";
+import ResponsiveImageSection from "@/components/ResponsiveImage/ResponsiveImageSection";
 import worldMapDesktop from "@/public/assets/images/world-map-desktop.png";
+import worldMapTablet from "@/public/assets/images/world-map-tablet.png";
+import worldMapMobile from "@/public/assets/images/world-map-mobile.png";
+import Locations from "@/components/Locations/Locations";
+import MessageUs from "@/components/MessageUs/MessageUs";
 
 export default function Careers() {
   return (
@@ -11,12 +15,20 @@ export default function Careers() {
       />
 
       <section>
-        <div className="container">
-          <Image src={worldMapDesktop} width={1100} height={600} />
+        <ResponsiveImageSection
+          imageDesktop={worldMapDesktop}
+          imageTablet={worldMapDesktop}
+          imageMobile={worldMapMobile}
+        />
+
+        <div>
+          <Locations />
+        </div>
+
+        <div>
+          <MessageUs />
         </div>
       </section>
-
-      <section></section>
     </div>
   );
 }
